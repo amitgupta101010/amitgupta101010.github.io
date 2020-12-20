@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emits Limits</title>
-    <style>
-        #I1{
-            text-align: center;
-        }
-        #I2{
-            text-align: right;
-        }
-        body{
-            background-color: rgb(185, 231, 231);
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amit</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<script>
-function visitorCounter(){
-    let count = (localStorage.getItem('total_visitor'));
-    if(count === null )
-    {
-        localStorage.setItem("total_visitor", 1)
-    }
-    else{
-        let visitor = parseInt(localStorage.getItem("total_visitor"))
-        visitor += 1 ;
-        localStorage.setItem("total_visitor", visitor)
-        document.getElementById("total").value = visitor;
-    }
-}
-
-</script>
-
-<body onload="visitorCounter()">
-    Building my profile...................
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud image">
+        <h1>I'm Amit Kumar</h1>
+        <h2>A <span class="pro">pro</span>grammer</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
+        <img src="images/mountain.png" alt="mountain image">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/amit.png" alt="">
+          <h2>Hello.</h2>
+          <p class="intro">I'm .Net Core developer. I have started my carrier as Associate Software developer at WatchGuard.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="code-image" src="images/computer.png" alt="">
+            <h3>Compture Skills</h3>
+            <p class="code-image-description">I'm good at making api's. Ready to learn any kind of technology.</p>
+          </div>
+          <div class="skill-row">
+            <img class="chilli-image" src="images/chillies.png" alt="">
+            <h3>Programming Language</h3>
+            <p class="chilli-image-description">Have knowledge in C++, Java, Python, C#, HTML, CSS, JS and some other tools like Docker, Jenkins, Azure, AWS, Git</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Football Lover</h3>
+          <p class="contact-message">If you were football lover, So contact me we will spent some time to talk about football as well as about technologies also 😊.</p>
+          <a class="btn" href="mailto:amit97817@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/amit-kumar-b1202b17a/">LinkedIn</a>
+        <a class="footer-link" target="_blank" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" target="_blank" href="https://www.appbrewery.co/">Website</a>
+        <p class="copyright">© 2020 Amit Kumar.</p>
+      </div>
+      
 </body>
 </html>
